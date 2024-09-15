@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+const apiProductsUrl = "/choreo-apis/ferredrfr/backend/v1"
+
 const productsApi = axios.create({
-    baseURL: import.meta.env.VITE_API_URL
+    baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiProductsUrl
 })
 
 // PRODUCTS 
