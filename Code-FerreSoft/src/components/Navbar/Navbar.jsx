@@ -5,12 +5,10 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCartShopping, faHeadset, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { contextProvider } from '../Context/index';
-import useUserStatus from "../../utils/useUserStatus";
 
 const Navbar = () => {
     const context = useContext(contextProvider)
     const [active, setActive] = useState(false); {/*para mostrar el carrito*/ }
-    const userStatus = useUserStatus();
     return (
         <header>
             <div className="container-hero">
